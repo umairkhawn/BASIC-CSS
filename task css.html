@@ -1,0 +1,67 @@
+<html>
+<head>
+<title>Task CSS</title>
+<style>
+table,tr{
+border:1px solid black;
+border-collapse:collapse;
+}
+</style>
+</head>
+<body>
+<ol>
+<li><a href="#button1" onclick="display()">Item 1</a></li>
+<li><a href="#button2" onclick="display2()">Item 2</a></li>
+<li><a href="#button3" onclick="display3()">Item 3</a></li>
+<li><a href="#button4" onclick="display4()">Item 4</a></li>
+</ol>
+<div style="background-color:green; height:1000px"></div><br><br>
+<div id="button1" style="background-color:grey;">
+<label>Name:</label>
+<input type="text" id="name"/><br><br><br><br>
+<label>Email:</label>
+<input type="email" id="email"/><br><br><br><br>
+<label>Age:</label>
+<input type="text" id="age"/>
+</div><br><br>
+<div id="button2" style="background-color:yellow;">
+<label>DOB:</label>
+<input type="text" id="dob"/><br><br><br><br>
+<label>Number:</label>
+<input type="number" id="number"/>
+</div><br><br>
+<div id="button3" style="background-color:red;">
+<input type="checkbox" id="male"/>
+<label>Male</label><br>
+<input type="checkbox" id="female"/>
+<label>Female</label>
+</div><br><br>
+<div id="button4" style="background-color:orange;">
+<select id="selectitem">
+<option value="value1">University</option>
+<option value="value2">College</option>
+<option value="value3">Middle</option>
+<option value="value4">School</option>
+
+</select>
+</div>
+<script>
+function display() {
+		document.getElementById("name").value="Muhammad Musa";
+		document.getElementById("email").value="abc@gmail.com";
+		document.getElementById("age").value="20 Years";
+		}
+function display2() {
+		document.getElementById("dob").value="30-04-1999";
+    	document.getElementById("number").value="03478458541";
+		}
+function display3() {
+		document.getElementById("male").checked="true";
+		document.getElementById("female").checked="true";
+}
+function display4() {
+		document.getElementById("selectitem").value="value4";
+}
+</script>
+</body>
+</html>
